@@ -32,41 +32,57 @@
         }
         h1, h2 {
             color: var(--primary-color);
+            text-align: center;
         }
-        .testimonials-section {
-            padding: 40px 0;
-            background-color: #f5f5f5;
-        }
-        .testimonials-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-bottom: 40px;
+        .testimonial-tree {
+            position: relative;
+            width: 100%;
+            height: 800px;
+            background: url('https://i.imgur.com/ZV9vXEg.png') no-repeat center;
+            background-size: contain;
         }
         .testimonial {
-            flex-basis: calc(33.333% - 20px);
-            background-color: var(--bg-color);
-            border-left: 4px solid var(--secondary-color);
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: absolute;
+            width: 200px;
+            padding: 15px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
-        .testimonial-icon {
-            font-size: 2em;
-            color: var(--secondary-color);
-            margin-bottom: 10px;
+        .testimonial:hover {
+            transform: scale(1.1);
+            z-index: 10;
         }
         .testimonial p {
-            font-style: italic;
-            margin-bottom: 10px;
+            font-size: 0.9em;
+            margin-bottom: 5px;
         }
         .testimonial-author {
             font-weight: bold;
+            font-size: 0.8em;
             color: var(--primary-color);
         }
+        #testimonial1 { top: 10%; left: 20%; }
+        #testimonial2 { top: 25%; left: 10%; }
+        #testimonial3 { top: 40%; left: 5%; }
+        #testimonial4 { top: 60%; left: 15%; }
+        #testimonial5 { top: 75%; left: 25%; }
+        #testimonial6 { top: 15%; right: 15%; }
+        #testimonial7 { top: 35%; right: 5%; }
+        #testimonial8 { top: 55%; right: 10%; }
+        #testimonial9 { top: 75%; right: 20%; }
+
         @media (max-width: 768px) {
+            .testimonial-tree {
+                height: auto;
+                background: none;
+            }
             .testimonial {
-                flex-basis: 100%;
+                position: static;
+                width: 100%;
+                margin-bottom: 20px;
+                border-radius: 10px;
             }
         }
     </style>
@@ -75,7 +91,7 @@
     <header>
         <div class="container">
             <h1>OLVP</h1>
-            <p>Nossa Familia cuidando da sua Familia</p>
+            <p>Soluções em Assistência Funerária</p>
         </div>
     </header>
 
@@ -84,88 +100,42 @@
             <div class="container">
                 <h2>O que nossos clientes dizem</h2>
                 
-                <div class="testimonials-row">
-                    <div class="testimonial">
-                        <span class="testimonial-icon">❤️</span>
-                        <p>"A OLVP nos acolheu com tanto carinho em um momento tão difícil. Sua equipe é verdadeiramente compassiva."</p>
+                <div class="testimonial-tree">
+                    <div id="testimonial1" class="testimonial">
+                        <p>"A OLVP nos acolheu com tanto carinho em um momento tão difícil."</p>
                         <span class="testimonial-author">- Maria Silva, 42 anos</span>
                     </div>
-                    <div class="testimonial">
-                        <span class="testimonial-icon">🙏</span>
-                        <p>"Graças ao plano da OLVP, pudemos nos concentrar em honrar a memória de nossa mãe sem preocupações financeiras."</p>
+                    <div id="testimonial2" class="testimonial">
+                        <p>"Graças ao plano da OLVP, pudemos honrar a memória de nossa mãe sem preocupações."</p>
                         <span class="testimonial-author">- João Santos, 38 anos</span>
                     </div>
-                    <div class="testimonial">
-                        <span class="testimonial-icon">👨‍👩‍👧‍👦</span>
-                        <p>"O atendimento familiar da OLVP fez toda a diferença. Sentimos como se estivéssemos entre amigos."</p>
+                    <div id="testimonial3" class="testimonial">
+                        <p>"O atendimento familiar da OLVP fez toda a diferença."</p>
                         <span class="testimonial-author">- Ana Rodrigues, 55 anos</span>
                     </div>
-                </div>
-
-                <div class="testimonials-row">
-                    <div class="testimonial">
-                        <span class="testimonial-icon">🕊️</span>
-                        <p>"A cerimônia de cremação foi conduzida com tanto respeito. A OLVP cuidou de cada detalhe."</p>
+                    <div id="testimonial4" class="testimonial">
+                        <p>"A cerimônia de cremação foi conduzida com tanto respeito."</p>
                         <span class="testimonial-author">- Carlos Mendes, 60 anos</span>
                     </div>
-                    <div class="testimonial">
-                        <span class="testimonial-icon">💼</span>
-                        <p>"Como empresário, aprecio a eficiência e profissionalismo da OLVP. Eles cuidam de tudo para você."</p>
+                    <div id="testimonial5" class="testimonial">
+                        <p>"Como empresário, aprecio a eficiência e profissionalismo da OLVP."</p>
                         <span class="testimonial-author">- Roberto Almeida, 50 anos</span>
                     </div>
-                    <div class="testimonial">
-                        <span class="testimonial-icon">🌟</span>
-                        <p>"O plano Diamante da OLVP superou todas as nossas expectativas. Vale cada centavo."</p>
+                    <div id="testimonial6" class="testimonial">
+                        <p>"O plano Diamante da OLVP superou todas as nossas expectativas."</p>
                         <span class="testimonial-author">- Fernanda Costa, 45 anos</span>
                     </div>
-                </div>
-
-                <div class="testimonials-row">
-                    <div class="testimonial">
-                        <span class="testimonial-icon">🤝</span>
-                        <p>"A equipe da OLVP nos guiou por todo o processo com paciência e compreensão."</p>
+                    <div id="testimonial7" class="testimonial">
+                        <p>"A equipe da OLVP nos guiou por todo o processo com paciência."</p>
                         <span class="testimonial-author">- Pedro Oliveira, 52 anos</span>
                     </div>
-                    <div class="testimonial">
-                        <span class="testimonial-icon">📞</span>
-                        <p>"O atendimento 24 horas da OLVP nos deu uma sensação de segurança inestimável."</p>
+                    <div id="testimonial8" class="testimonial">
+                        <p>"O atendimento 24 horas da OLVP nos deu uma sensação de segurança."</p>
                         <span class="testimonial-author">- Luciana Ferreira, 39 anos</span>
                     </div>
-                    <div class="testimonial">
-                        <span class="testimonial-icon">🏡</span>
-                        <p>"Mesmo morando longe, a OLVP cuidou de tudo para nós. O serviço de translado foi impecável."</p>
+                    <div id="testimonial9" class="testimonial">
+                        <p>"Mesmo morando longe, a OLVP cuidou de tudo para nós."</p>
                         <span class="testimonial-author">- Marcelo Souza, 47 anos</span>
-                    </div>
-                </div>
-
-                <div class="testimonials-row">
-                    <div class="testimonial">
-                        <span class="testimonial-icon">💖</span>
-                        <p>"A forma como a OLVP tratou meu avô nos seus últimos momentos foi verdadeiramente tocante."</p>
-                        <span class="testimonial-author">- Juliana Martins, 30 anos</span>
-                    </div>
-                    <div class="testimonial">
-                        <span class="testimonial-icon">🌈</span>
-                        <p>"Em meio à tristeza, a OLVP trouxe um raio de luz com seu atendimento acolhedor."</p>
-                        <span class="testimonial-author">- Ricardo Nunes, 58 anos</span>
-                    </div>
-                    <div class="testimonial">
-                        <span class="testimonial-icon">🎓</span>
-                        <p>"Como estudante, o plano da OLVP me deu tranquilidade financeira para cuidar da minha família."</p>
-                        <span class="testimonial-author">- Camila Rocha, 25 anos</span>
-                    </div>
-                </div>
-
-                <div class="testimonials-row">
-                    <div class="testimonial">
-                        <span class="testimonial-icon">🌿</span>
-                        <p>"Optamos pela cremação com a OLVP e o processo foi conduzido com muito respeito ao meio ambiente."</p>
-                        <span class="testimonial-author">- André Santos, 40 anos</span>
-                    </div>
-                    <div class="testimonial">
-                        <span class="testimonial-icon">🤲</span>
-                        <p>"A OLVP não apenas prestou um serviço, mas nos apoiou emocionalmente durante todo o processo."</p>
-                        <span class="testimonial-author">- Beatriz Lima, 36 anos</span>
                     </div>
                 </div>
             </div>
