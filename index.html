@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLVP - Soluções em Assistência Funerária</title>
+    <title>OLVP - Cuidando da sua Família</title>
     <style>
         :root {
             --primary-color: #1a237e; /* Azul escuro */
@@ -35,10 +35,26 @@
             margin-bottom: 20px;
         }
         .hero {
-            background-color: var(--primary-color);
+            background-image: url('https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
             color: var(--bg-color);
             text-align: center;
             padding: 100px 0;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
         }
         .hero h2 {
             font-size: 2.5em;
@@ -141,6 +157,12 @@
             color: var(--primary-color);
             margin-bottom: 10px;
         }
+        .testimonial-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
         @media (max-width: 768px) {
             .container {
                 padding: 0 15px;
@@ -164,9 +186,9 @@
     </header>
 
     <section class="hero">
-        <div class="container">
-            <h2>Tranquilidade e Respeito em Momentos Difíceis</h2>
-            <p>Oferecemos planos funerários completos para você e sua família</p>
+        <div class="container hero-content">
+            <h2>Cuidando do seu bem mais precioso, sua família.</h2>
+            <p>Oferecemos planos funerários completos para você e seus entes queridos</p>
             <a href="#plans" class="btn">Conheça Nossos Planos</a>
         </div>
     </section>
@@ -174,6 +196,7 @@
     <section class="features">
         <div class="container">
             <h2>Por que escolher a OLVP?</h2>
+            <p>Com mais de 30 anos de atuação nesse mercado, cuidamos de famílias com dedicação e respeito.</p>
             <div class="feature-box">
                 <i class="fas fa-heart"></i>
                 <h3>Atendimento Humanizado</h3>
@@ -201,8 +224,13 @@
                 <ul>
                     <li>Urna mortuária</li>
                     <li>Ornamentação</li>
-                    <li>Translado (100 km)</li>
-                    <li>Serviço de copa</li>
+                    <li>Translado de até 100 km</li>
+                    <li>Véu, velas</li>
+                    <li>Assistência</li>
+                    <li>Remoção dentro do município</li>
+                    <li>Higienização do corpo</li>
+                    <li>Tamponamento</li>
+                    <li>Necromaquiagem</li>
                 </ul>
                 <a href="https://olvp.com.br/" class="btn">Contratar</a>
             </div>
@@ -211,9 +239,9 @@
                 <p class="price">R$ 60,10/mês</p>
                 <ul>
                     <li>Todos os benefícios do Plano Bronze</li>
-                    <li>Translado (300 km)</li>
-                    <li>Coroa de flores</li>
+                    <li>Translado de até 300 km</li>
                     <li>Horas de velório</li>
+                    <li>Coroa de flores</li>
                 </ul>
                 <a href="https://olvp.com.br/" class="btn">Contratar</a>
             </div>
@@ -222,9 +250,26 @@
                 <p class="price">R$ 77,65/mês</p>
                 <ul>
                     <li>Todos os benefícios do Plano Prata</li>
-                    <li>Translado (500 km)</li>
+                    <li>Translado de até 500 km</li>
                     <li>Tanatopraxia</li>
-                    <li>Serviços premium</li>
+                </ul>
+                <a href="https://olvp.com.br/" class="btn">Contratar</a>
+            </div>
+            <div class="plan-box">
+                <h3>Plano Topázio</h3>
+                <p class="price">R$ 95,00/mês</p>
+                <ul>
+                    <li>Todos os benefícios do Plano Ouro</li>
+                    <li>Taxa de abertura e fechamento de sepultura</li>
+                </ul>
+                <a href="https://olvp.com.br/" class="btn">Contratar</a>
+            </div>
+            <div class="plan-box">
+                <h3>Plano Diamante</h3>
+                <p class="price">R$ 133,75/mês</p>
+                <ul>
+                    <li>Todos os benefícios do Plano Topázio</li>
+                    <li>Cremação (em vez da taxa de abertura e fechamento)</li>
                 </ul>
                 <a href="https://olvp.com.br/" class="btn">Contratar</a>
             </div>
@@ -234,6 +279,7 @@
     <section class="testimonials">
         <div class="container">
             <h2>O que nossos clientes dizem</h2>
+            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Família feliz" class="testimonial-image">
             <div class="testimonial">
                 <p>"A OLVP nos deu todo o suporte necessário em um momento difícil. Recomendo fortemente."</p>
                 <cite>- Maria Silva</cite>
