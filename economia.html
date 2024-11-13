@@ -4,21 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OLVP - Economia e Prevenção</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        /* Mantenha o mesmo estilo da página principal aqui */
-        /* Adicione estilos específicos para esta página, se necessário */
+        :root {
+            --primary-color: #1a237e; /* Azul escuro */
+            --secondary-color: #ffd700; /* Amarelo */
+            --text-color: #333;
+            --bg-color: #ffffff;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            color: var(--primary-color);
+        }
         .stats {
             background-color: #f5f5f5;
             padding: 40px;
             border-radius: 10px;
             margin-top: 30px;
         }
-        #economyChart {
-            max-width: 600px;
+        .chart-container {
+            width: 400px;
             margin: 0 auto;
         }
+        .economic-info {
+            margin-top: 30px;
+        }
+        .economic-point {
+            background-color: var(--bg-color);
+            border-left: 4px solid var(--secondary-color);
+            padding: 15px;
+            margin-bottom: 15px;
+        }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -38,7 +73,31 @@
         <div class="container">
             <h2>Por que planejar é importante?</h2>
             <p>Um plano funerário pode proporcionar até 60% de economia em comparação com serviços contratados no momento da necessidade. No entanto, 77% das famílias brasileiras não possuem uma reserva financeira para imprevistos.</p>
-            <canvas id="economyChart"></canvas>
+            
+            <div class="chart-container">
+                <canvas id="economyChart"></canvas>
+            </div>
+
+            <div class="economic-info">
+                <h3>Aspectos Econômicos a Considerar</h3>
+                <div class="economic-point">
+                    <h4>Custo Médio de um Funeral</h4>
+                    <p>O custo médio de um funeral no Brasil pode variar entre R$ 3.000 e R$ 10.000, dependendo da região e dos serviços incluídos.</p>
+                </div>
+                <div class="economic-point">
+                    <h4>Inflação no Setor Funerário</h4>
+                    <p>Os custos funerários têm aumentado acima da inflação geral, com um aumento médio de 8% ao ano nos últimos 5 anos.</p>
+                </div>
+                <div class="economic-point">
+                    <h4>Vantagens Financeiras do Planejamento</h4>
+                    <p>Ao contratar um plano funerário, você pode economizar até 60% em comparação com os custos de um funeral contratado no momento da necessidade.</p>
+                </div>
+                <div class="economic-point">
+                    <h4>Impacto Financeiro nas Famílias</h4>
+                    <p>Para 35% das famílias brasileiras, um gasto inesperado de R$ 3.000 representaria um grande desafio financeiro.</p>
+                </div>
+            </div>
+
             <p>Ao optar por um plano da OLVP, você não apenas garante tranquilidade emocional, mas também financeira para sua família em momentos difíceis.</p>
         </div>
     </section>
@@ -52,39 +111,40 @@
     <script>
         var ctx = document.getElementById('economyChart').getContext('2d');
         var chart = new Chart(ctx, {
-            type: 'bar',
+            type: 'pie',
             data: {
-                labels: ['Com Plano Funerário', 'Sem Plano Funerário', 'Famílias sem Reserva'],
+                labels: ['Famílias sem Reserva de Emergência', 'Famílias com Reserva de Emergência'],
                 datasets: [{
-                    label: 'Porcentagem',
-                    data: [40, 100, 77],
+                    data: [77, 23],
                     backgroundColor: [
-                        'rgba(75, 192, 192, 0.6)',
-                        'rgba(255, 99, 132, 0.6)',
-                        'rgba(255, 206, 86, 0.6)'
+                        'rgba(255, 99, 132, 0.8)',
+                        'rgba(75, 192, 192, 0.8)'
                     ],
                     borderColor: [
-                        'rgba(75, 192, 192, 1)',
                         'rgba(255, 99, 132, 1)',
-                        'rgba(255, 206, 86, 1)'
+                        'rgba(75, 192, 192, 1)'
                     ],
                     borderWidth: 1
                 }]
             },
             options: {
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        max: 100
-                    }
-                },
+                responsive: true,
                 plugins: {
                     legend: {
-                        display: false
+                        position: 'bottom',
                     },
                     title: {
                         display: true,
-                        text: 'Economia e Preparação Financeira'
+                        text: 'Reserva de Emergência das Famílias Brasileiras'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                var label = context.label || '';
+                                var value = context.parsed || 0;
+                                return label + ': ' + value + '%';
+                            }
+                        }
                     }
                 }
             }
