@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLVP - Depoimentos de Clientes</title>
+    <style>
+        /* Mantenha o mesmo estilo da página principal aqui */
+        /* Adicione estilos específicos para esta página, se necessário */
+        .testimonial {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .testimonial-icon {
+            font-size: 2em;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OLVP</h1>
+            <p>Soluções em Assistência Funerária</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>O que nossos clientes dizem</h2>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial">
+                <span class="testimonial-icon">❤️</span>
+                <p>"A OLVP nos acolheu com tanto carinho em um momento tão difícil. Sua equipe é verdadeiramente compassiva."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">🙏</span>
+                <p>"Graças ao plano da OLVP, pudemos nos concentrar em honrar a memória de nossa mãe sem preocupações financeiras."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">👨‍👩‍👧‍👦</span>
+                <p>"O atendimento familiar da OLVP fez toda a diferença. Sentimos como se estivéssemos entre amigos."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">🕊️</span>
+                <p>"A cerimônia de cremação foi conduzida com tanto respeito. A OLVP cuidou de cada detalhe."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">💼</span>
+                <p>"Como empresário, aprecio a eficiência e profissionalismo da OLVP. Eles cuidam de tudo para você."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">🌟</span>
+                <p>"O plano Diamante da OLVP superou todas as nossas expectativas. Vale cada centavo."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">🤝</span>
+                <p>"A equipe da OLVP nos guiou por todo o processo com paciência e compreensão."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">📞</span>
+                <p>"O atendimento 24 horas da OLVP nos deu uma sensação de segurança inestimável."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">🏡</span>
+                <p>"Mesmo morando longe, a OLVP cuidou de tudo para nós. O serviço de translado foi impecável."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">💖</span>
+                <p>"A forma como a OLVP tratou meu avô nos seus últimos momentos foi verdadeiramente tocante."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">🌈</span>
+                <p>"Em meio à tristeza, a OLVP trouxe um raio de luz com seu atendimento acolhedor."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">🎓</span>
+                <p>"Como estudante, o plano da OLVP me deu tranquilidade financeira para cuidar da minha família."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">🌿</span>
+                <p>"Optamos pela cremação com a OLVP e o processo foi conduzido com muito respeito ao meio ambiente."</p>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial-icon">🤲</span>
+                <p>"A OLVP não apenas prestou um serviço, mas nos apoiou emocionalmente durante todo o processo."</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 OLVP - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
