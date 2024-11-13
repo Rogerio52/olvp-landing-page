@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLVP - Cremação: Uma Solução Tranquila</title>
+    <style>
+        /* Mantenha o mesmo estilo da página principal aqui */
+        /* Adicione estilos específicos para esta página, se necessário */
+        .cremation-info {
+            background-color: #f5f5f5;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OLVP</h1>
+            <p>Soluções em Assistência Funerária</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Cremação: Uma Solução Moderna e Tranquila</h2>
+        </div>
+    </section>
+
+    <section class="cremation-info">
+        <div class="container">
+            <h2>Por que escolher a cremação?</h2>
+            <p>A cremação tem se tornado uma opção cada vez mais popular, oferecendo uma alternativa moderna e prática ao sepultamento tradicional. Ao optar pela cremação, você:</p>
+            <ul>
+                <li>Elimina a necessidade de um jazigo permanente</li>
+                <li>Tem mais flexibilidade na escolha do local para guardar ou espalhar as cinzas</li>
+                <li>Reduz custos a longo prazo associados à manutenção de um túmulo</li>
+                <li>Contribui para a preservação do meio ambiente</li>
+            </ul>
+            <p>Na OLVP, oferecemos serviços de cremação com todo o respeito e dignidade que seu ente querido merece. Nosso plano Diamante inclui a opção de cremação, proporcionando tranquilidade e praticidade para você e sua família.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 OLVP - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
