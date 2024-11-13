@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLVP - Economia e Prevenção</title>
+    <style>
+        /* Mantenha o mesmo estilo da página principal aqui */
+        /* Adicione estilos específicos para esta página, se necessário */
+        .stats {
+            background-color: #f5f5f5;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        #economyChart {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OLVP</h1>
+            <p>Soluções em Assistência Funerária</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Economia e Prevenção: A Importância do Planejamento</h2>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <h2>Por que planejar é importante?</h2>
+            <p>Um plano funerário pode proporcionar até 60% de economia em comparação com serviços contratados no momento da necessidade. No entanto, 77% das famílias brasileiras não possuem uma reserva financeira para imprevistos.</p>
+            <canvas id="economyChart"></canvas>
+            <p>Ao optar por um plano da OLVP, você não apenas garante tranquilidade emocional, mas também financeira para sua família em momentos difíceis.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 OLVP - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        var ctx = document.getElementById('economyChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Com Plano Funerário', 'Sem Plano Funerário', 'Famílias sem Reserva'],
+                datasets: [{
+                    label: 'Porcentagem',
+                    data: [40, 100, 77],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(255, 206, 86, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Economia e Preparação Financeira'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
