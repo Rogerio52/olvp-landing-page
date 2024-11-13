@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLVP - Soluções em Assistência Funerária</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #1a237e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .features {
+            background-color: #f5f5f5;
+        }
+        .feature-box {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .feature-box i {
+            font-size: 3em;
+            color: #1a237e;
+            margin-bottom: 15px;
+        }
+        .plans {
+            background-color: white;
+        }
+        .plan-box {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .plan-box h3 {
+            color: #1a237e;
+        }
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .cta {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OLVP</h1>
+            <p>Soluções em Assistência Funerária</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Tranquilidade e Respeito em Momentos Difíceis</h2>
+            <p>Oferecemos planos funerários completos para você e sua família</p>
+            <a href="#plans" class="btn">Conheça Nossos Planos</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Por que escolher a OLVP?</h2>
+            <div class="feature-box">
+                <i class="fas fa-heart"></i>
+                <h3>Atendimento Humanizado</h3>
+                <p>Cuidamos de cada detalhe com respeito e compaixão</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Segurança e Tranquilidade</h3>
+                <p>Planos que garantem assistência completa para você e sua família</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Ampla Cobertura</h3>
+                <p>Atendimento em diversas cidades da região</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="plans">
+        <div class="container">
+            <h2>Nossos Planos</h2>
+            <div class="plan-box">
+                <h3>Plano Bronze</h3>
+                <p class="price">R$ 42,35/mês</p>
+                <ul>
+                    <li>Urna mortuária</li>
+                    <li>Ornamentação</li>
+                    <li>Translado (100 km)</li>
+                    <li>Serviço de copa</li>
+                </ul>
+                <a href="https://olvp.com.br/" class="btn">Contratar</a>
+            </div>
+            <div class="plan-box">
+                <h3>Plano Prata</h3>
+                <p class="price">R$ 60,10/mês</p>
+                <ul>
+                    <li>Todos os benefícios do Plano Bronze</li>
+                    <li>Translado (300 km)</li>
+                    <li>Coroa de flores</li>
+                    <li>Horas de velório</li>
+                </ul>
+                <a href="https://olvp.com.br/" class="btn">Contratar</a>
+            </div>
+            <div class="plan-box">
+                <h3>Plano Ouro</h3>
+                <p class="price">R$ 77,65/mês</p>
+                <ul>
+                    <li>Todos os benefícios do Plano Prata</li>
+                    <li>Translado (500 km)</li>
+                    <li>Tanatopraxia</li>
+                    <li>Serviços premium</li>
+                </ul>
+                <a href="https://olvp.com.br/" class="btn">Contratar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Proteja sua família hoje mesmo</h2>
+            <p>Não deixe para amanhã a tranquilidade que você pode ter hoje</p>
+            <a href="https://olvp.com.br/" class="btn">Fale Conosco</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 OLVP - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (!this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    window.location.href = 'https://olvp.com.br/';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
